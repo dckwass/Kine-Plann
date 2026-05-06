@@ -50,7 +50,7 @@ export async function POST(request) {
     }
 
     const message = await client.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-5-20251101",
       max_tokens: 4000,
       system: SYSTEM_PROMPT,
       messages: [{ role: "user", content: problem }],
